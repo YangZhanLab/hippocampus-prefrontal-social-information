@@ -15,16 +15,16 @@ It should be noted that, the pre-computed file will be overwritten after re-sunn
 2. "synergy_decoding.m"
 This script assesses synergy-based decoding performance. Synergy decoding was applied per session using balanced sets of eight neurons. A naive Bayesian decoder was trained to discriminate among four social stimuli. Decoding accuracy was compared between using both spike+LFP datasets versus spike-only datasets in mPFC and vHPC.
 
-Example data includes all sessions containing at least eight neurons for mPFC and vHPC, stored in the zip package:
-"\synergy\mPFC\"
-"\synergy\vHPC\"
+Example data includes all sessions containing at least eight neurons for mPFC and vHPC, stored in:
+"\data\synergy\mPFC\"
+"\data\synergy\vHPC\"
 
 3. "pseudo_decoding.m"
 This script evaluates decoding performance for discriminateing between two social stimulus identities (S and N) across the time course of social investigation. Pseudo-population decoding was implemented via single-trial population decoding, constructing pseudo-populations from neurons or LFPs across multiple recording sessions. A naive Bayesian decoder was trained to differentiate between two social stimuli. Decoding accuracy was compared between mPFC and vHPC.
 
-Example data includes five sessions each for mPFC and vHPC located in the zip package:
-"\pseudo\mPFC\"
-"\pseudo\vHPC\"
+Example data includes five sessions each for mPFC and vHPC located in:
+"\data\pseudo\mPFC\"
+"\data\pseudo\vHPC\"
 
 All file paths was specified relative to the root directory of the project. Ensure MATLAB's current working directory is set to the project root when executing these scripts.
 
