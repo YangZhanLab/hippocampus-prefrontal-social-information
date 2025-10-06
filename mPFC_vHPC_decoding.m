@@ -32,8 +32,8 @@ decode_percent_overall_compared=[];
 decode_percent_overall_valid_session_compared=[];
 
 %% Section I: decoding
-% if false % set as TRUE to re-run the decoding using the illustrative files
-if true
+if false % set as TRUE to re-run the decoding using the illustrative files
+%if true
 
 for idim=1:length(pop_cell_dim_compared)
 pop_cell_dim=pop_cell_dim_compared(idim);
@@ -157,7 +157,7 @@ for kk=1:folderLength
         % of cells all having a mean firing rate above the threshold
         if sum(dataVector_mean>=0.5)>=pop_cell_dim_max
            
-            % Ñ¡È¡Ç°ÃæÈô¸ÉÎ¬µÄÏ¸°û
+            % é€‰å–å‰é¢è‹¥å¹²ç»´çš„ç»†èƒ
             dataVector2 = dataVector2(1:pop_cell_dim,:,:);
             databVector2 = databVector2(1:pop_cell_dim,:,:);
             dataVector_during2 = dataVector_during2(1:pop_cell_dim,:);
@@ -221,7 +221,7 @@ for kk=1:folderLength
                 train_labels=labels(~test_index,:);                
                 
                 %# Decoding
-                % p(s|f1,f2,...,fn) ¡Ø p(s)p(f1|s)p(f2|s)...p(fn|s),
+                % p(s|f1,f2,...,fn) âˆ p(s)p(f1|s)p(f2|s)...p(fn|s),
                 % s--stimulus, f--feature
                 p_sf_numer=[];
                 for iclass=1:length(label_classes)
@@ -395,4 +395,5 @@ set(gca,'YLim',[15 90]);
 xlabel('Bin length');
 ylabel('Mean predicted accuracy (%)');
 title(['Decoding performance under ' num2str(dim_compared) '-cell population condition']);
+
 
