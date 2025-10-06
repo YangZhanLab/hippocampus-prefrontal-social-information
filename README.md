@@ -4,7 +4,7 @@ This software package contains code for population decoding, synergy decoding an
 1. "mPFC_vHPC_decoding.m"
 This script evaluates decoding performances using neurons from the medial prefrontal cortex (mPFC) and the ventral hippocampus (vHPC). Population decoding was conducted within each session using binned population vectors from the during stimulus period. A naive Bayesian decoder was trained to classify firing patterns associated with four distinct social stimuli. The effects of bin length and population dimensions on classification accuracy were compared between mPFC and vHPC.
 
-By defalt, the script displays pre-computed multi-session accuracy results for mPFC and vHPC, loaded from '\data\decode_results_Eular_dist_4_class_all.mat'. To retrain and evaluate the model using the provided example firing data, set the execution condition statement in "Line 35" to "true".
+By defalt, the script displays pre-computed multi-session accuracy results for mPFC and vHPC, loaded from '\data\decode_results_Eular_dist_4_class_all.mat'. To retrain and evaluate the model using the provided example firing data, set the execution condition statement in "Line 36" to "true".
 
 Example data includes single-unit firing from two sessions each for mPFC and vHPC located in
 "\data\mPFC\produce_single_cell_data_all_mPFC"
